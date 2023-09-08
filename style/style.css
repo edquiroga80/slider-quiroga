@@ -170,23 +170,26 @@ body {
 .gallery-nav li.gallery-item-selected {
     background: #555;
 }
+
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .gallery {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 20px; /* Agrega un margen top para separar los botones */
     }
-    
+
     .gallery-item {
         width: 100%;
-        margin-bottom: 20px; /* Espacio entre las imágenes */
+        /* Elimina el margen inferior para que las imágenes estén más centradas verticalmente */
     }
-    
+
     .gallery-controls {
         text-align: center;
+        margin-top: 10px; /* Ajusta el margen superior para elevar los botones */
     }
-    
+
     .gallery-controls button {
         font-size: 20px; /* Tamaño de fuente más pequeño */
         margin: 5px; /* Espacio entre los botones */
